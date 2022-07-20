@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAIL SENDER</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static '/stylesheet.css' %}" />
+  </head>
+</html>
+<body>
+  <form class="main" method="post" action="contact">
+    <section>
+      <h2 class="main-title">Mail Sender</h2>
+      <span class="main-divider"></span>
+      <div class="new">
+        {% csrf_token %}
+
+        <div class="main-form">
+          <p>
+            USER MAIL:&nbsp;&nbsp;
+            <input
+              type="email"
+              name="From"
+              placeholder="Enter Mail..."
+              class="main-input"
+            />
+          </p>
+        </div>
+        <div class="main-form">
+          <p>
+            PASSWORD:
+            <input
+              type="text"
+              name="Password"
+              placeholder="Enter Password..."
+              class="main-input"
+            />
+          </p>
+        </div>
+        <div class="main-form">
+          <p>
+            TO MAIL:&emsp;&nbsp;&nbsp;
+            <input
+              type="text"
+              name="email"
+              placeholder="Enter Mail..."
+              class="main-input"
+            />
+          </p>
+        </div>
+        <div class="main-form">
+          <p>
+            SUBJECT:&nbsp;&nbsp;&nbsp;&nbsp;
+            <input
+              type="text"
+              name="subject"
+              placeholder="Enter Subject..."
+              class="main-input"
+            />
+          </p>
+        </div>
+        <div class="main-form">
+          <p>
+            MESSAGE:&nbsp;&nbsp;&nbsp;
+            <input
+              type="text"
+              name="message"
+              placeholder="Enter Message..."
+              class="main-input"
+            />
+          </p>
+        </div>
+      </div>
+      <script
+        src="https://kit.fontawesome.com/dfde56456b.js"
+        crossorigin="anonymous"
+      ></script>
+      <button class="main-button">SUBMIT</button>
+      <span class="main-divider"></span>
+    </section>
+    <style></style>
+  </form>
+</body>
