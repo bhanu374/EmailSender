@@ -87,6 +87,100 @@
       <button class="main-button">SUBMIT</button>
       <span class="main-divider"></span>
     </section>
-    <style></style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #74c1ff;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  font-size: 16px;
+  padding: 6px;
+  overflow: hidden;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.main {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: #ffffff;
+  width: 420px;
+  padding: 25px 30px;
+  border-radius: 7px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+.main-title {
+  text-align: left;
+  font-weight: 300;
+  margin-bottom: 10px;
+  color: #1b1b1b;
+}
+.main-form {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.main-form input {
+  width: 70%;
+  outline: none;
+  border: 1px solid #bfbfbfbf;
+  height: 35px;
+  border-radius: px;
+  padding: 0 10px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+.main-button {
+  width: 20%;
+  outline: none;
+  border: 1px solid #bfbfbfbf;
+  height: 35px;
+  border-radius: px;
+  padding: 0 10px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+.main-divider {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background: #69aed8;
+  display: block;
+  margin: 10px 0px;
+  border-radius: 50px;
+}
+.main-div{
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background: #69aed8;
+  display: block;
+  margin: 10px 0px;
+  border-radius: 50px;
+}
+    </style>
   </form>
 </body>
