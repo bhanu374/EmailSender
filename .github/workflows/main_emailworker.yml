@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'emailworker'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5E1EDBB6B7EF45BAB8B00F91B8887AAC }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_000438FC0EEC47D899C7E4889009FE33 }}
